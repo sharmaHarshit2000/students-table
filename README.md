@@ -1,47 +1,114 @@
-# Students Table Fullstack Project
+# Students Table Project
 
-A full-stack implementation of a Students Table assignment, featuring a pure frontend React application that can optionally connect to a NestJS/PostgreSQL backend.
+This project is a simple Students Table application built with React. It was created as part of a technical assignment to demonstrate basic CRUD functionality on the frontend. The application allows users to add, edit, and delete student records directly in the browser.
 
-## Assignment Overview
+The project also includes an optional backend built with NestJS and PostgreSQL. However, the frontend works completely on its own and stores data using the browser's local storage.
 
-This project was built to satisfy the following requirements:
-- **Frontend-only core functionality**: Fully operational without a backend, storing data in memory/localStorage.
-- **Form validation**: Complete validations for required fields and valid email format.
-- **CRUD Operations**: Support for Create, Read, Update, and Delete actions.
-- **Simulated loading states**: Network latency simulation for UI feedback.
-- **Excel Export**: Ability to download the student table data into an `.xlsx` file.
-- **Bonus Backend Module**: Implementation of an optional NestJS backend with a PostgreSQL database.
+---
 
-## Live Links (Submission)
+## Live Demo
 
-- **GitHub Repository**: [https://github.com/sharmaHarshit2000/students-table](https://github.com/sharmaHarshit2000/students-table)
-- **Live Frontend (Vercel)**: [https://students-table-psi.vercel.app](https://students-table-psi.vercel.app)
-- **Live Backend API (Render - Optional Bonus)**: [https://students-table.onrender.com](https://students-table.onrender.com)
+Frontend (Deployed):
+https://students-table-psi.vercel.app
 
-## Folder Structure
+Backend API (Optional):
+https://students-table.onrender.com
 
-- `/frontend` - React.js project created with Vite + Tailwind CSS.
-- `/backend` - NestJS application handling PostgreSQL DB connections.
+GitHub Repository:
+https://github.com/sharmaHarshit2000/students-table
 
-## How to Run
+---
 
-### Frontend (Mandatory functionality)
-The frontend uses a fallback to `localStorage` when the backend is offline, meaning it works 100% perfectly on its own!
+## Features
 
-1. `cd frontend`
-2. `npm install`
-3. `npm run dev`
+The application includes the following functionality:
 
-### Backend (Optional Bonus)
-Required if you want to test the full-stack database integration.
+- Display a list of students in a table
+- Add a new student with form validation
+- Edit existing student information
+- Delete a student with a confirmation prompt
+- Basic loading state simulation
+- Download the student list as an Excel file
+- Data persistence using localStorage
 
-1. `cd backend`
-2. `npm install`
-3. Set your PostgreSQL `.env` variables (e.g., `DATABASE_URL`).
-4. `npm run start:dev`
+Each student record includes:
+- Name
+- Email
+- Age
 
-## Features & Highlights
+All fields are required and the email field must follow a valid email format.
 
-- **Clean UI**: Uses modern React and TailwindCSS for a straightforward, responsive layout.
-- **No Over-engineering**: Built precisely to specs using standard React features. The Excel exporter deliberately uses the stock `xlsx` package with no unnecessary styling to keep the code clean and strictly human-written.
-- **Fault-tolerant**: If the backend server drops, the frontend transparently falls back to local storage without throwing UI error boundaries.
+---
+
+## Tech Stack
+
+Frontend:
+- React
+- Vite
+- Tailwind CSS
+
+Backend (Optional Bonus):
+- NestJS
+- PostgreSQL
+
+---
+
+## Project Structure
+
+students-table
+│
+├── frontend   → React application
+└── backend    → NestJS backend (optional)
+
+---
+
+## Running the Project Locally
+
+### 1. Frontend
+
+The frontend works independently and does not require the backend.
+
+Steps:
+
+1. Navigate to the frontend folder
+2. Install dependencies
+3. Start the development server
+
+Commands:
+
+cd frontend
+npm install
+npm run dev
+
+After running the command, open the local development URL shown in the terminal.
+
+---
+
+### 2. Backend (Optional)
+
+If you want to run the backend with PostgreSQL:
+
+1. Navigate to the backend folder
+2. Install dependencies
+3. Add a `.env` file with your PostgreSQL connection string
+4. Start the server
+
+Commands:
+
+cd backend
+npm install
+npm run start:dev
+
+---
+
+## Notes
+
+The assignment requirement was to build a fully working frontend application. The backend was implemented as an additional feature for learning and experimentation.
+
+The frontend automatically stores and retrieves student data from the browser's localStorage so it continues to work even if the backend is not running.
+
+---
+
+## Author
+
+Harshit Sharma

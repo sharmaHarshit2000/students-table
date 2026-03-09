@@ -1,11 +1,13 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
+
 import { StudentsModule } from './students/students.module';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [
-
     ConfigModule.forRoot({
       isGlobal: true,
     }),
@@ -21,7 +23,9 @@ import { StudentsModule } from './students/students.module';
     }),
 
     StudentsModule
-
   ],
+
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
