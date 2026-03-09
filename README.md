@@ -14,9 +14,9 @@ This project was built to satisfy the following requirements:
 
 ## Live Links (Submission)
 
-- **GitHub Repository**: [https://github.com/yourusername/students-table](https://github.com/yourusername/students-table)
-- **Live Frontend (Vercel)**: [https://students-table-demo.vercel.app](https://students-table-demo.vercel.app)
-- **Live Backend API (Render - Optional Bonus)**: [https://students-table-api.onrender.com](https://students-table-api.onrender.com)
+- **GitHub Repository**: [https://github.com/sharmaHarshit2000/students-table](https://github.com/sharmaHarshit2000/students-table)
+- **Live Frontend (Vercel)**: [https://students-table-psi.vercel.app](https://students-table-psi.vercel.app)
+- **Live Backend API (Render - Optional Bonus)**: [https://students-table.onrender.com](https://students-table.onrender.com)
 
 ## Folder Structure
 
